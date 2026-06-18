@@ -175,7 +175,8 @@ Func DragonMossFarmLoop()
 	RandomSleep(50)
 
 	; Aggro and cast hero spirits
-	MoveTo(-5300, 15600, 0, UseIMSWhenAvailable)
+	;MoveTo(-5300, 15600, 0, 0, UseIMSWhenAvailable)
+	MoveTo(-5400, 15675, 0, 0, UseIMSWhenAvailable)
 	If $DM_RANGER_HERO > 0 Then
 		UseHeroSkill($DM_RANGER_HERO, $DM_RANGER_HERO_WINNOWING)
 	EndIf
